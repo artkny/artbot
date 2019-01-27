@@ -29,7 +29,7 @@ bot.on('message', async message => {
 
     await exp(message.author)
 })
-bot.login(process.env.BOT_TOKEN)
+bot.login(config.token)
 bot.on('ready', () => {
     console.log(`${bot.user.username} online`);
     bot.user.setPresence({status: 'dnd', game:{name: 'test', type: 0}})
